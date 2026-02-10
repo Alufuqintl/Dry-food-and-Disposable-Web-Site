@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | ALUFUQ INTL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fcfaf5',
+                            100: '#f8f2e6',
+                            200: '#efe0c6',
+                            300: '#e3c89f',
+                            400: '#d5aa6e',
+                            500: '#ca9047',
+                            600: '#be7b3b',
+                            700: '#9e6132',
+                            800: '#824f2f',
+                            900: '#6b4129',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm" id="navbar">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="logo.png" alt="ALUFUQ INTL" class="h-16 w-auto object-contain">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-brand-500 transition-colors font-medium">Home</a>
+                <a href="about.html" class="text-brand-500 font-bold border-b-2 border-brand-500">About Us</a>
+                <a href="products.html"
+                    class="text-gray-600 hover:text-brand-500 transition-colors font-medium">Products</a>
+                <a href="#contact"
+                    class="px-6 py-2 bg-brand-500 text-white rounded-full hover:bg-brand-600 transition-colors shadow-lg shadow-brand-500/30 font-medium">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-600 focus:outline-none" id="mobile-menu-btn">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl" id="mobile-menu">
+            <div class="px-6 py-4 space-y-3">
+                <a href="index.html" class="block text-gray-600 hover:text-brand-500">Home</a>
+                <a href="about.html" class="block text-brand-500 font-bold">About Us</a>
+                <a href="products.html" class="block text-gray-600 hover:text-brand-500">Products</a>
+                <a href="#contact" class="block text-gray-600 hover:text-brand-500">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-gray-900 text-white pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <!-- Abstract background pattern -->
+            <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                class="w-full h-full object-cover grayscale">
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Our Story</h1>
+            <p class="text-xl text-brand-100 max-w-2xl mx-auto font-light">Dedicated to elevating culinary experiences
+                through superior ingredients.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+
+        <!-- Story Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row gap-16 items-center">
+                    <div class="w-full md:w-1/2">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] bg-gray-200">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Chefs Cooking" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h2 class="text-3xl font-serif font-bold text-gray-900 mb-6">A Passion for Quality</h2>
+                        <div class="space-y-4 text-gray-600 leading-relaxed text-lg">
+                            <p>
+                                <span class="text-brand-600 font-bold">Al'ufuq International L.L.C</span> is a dynamic
+                                and trusted trading company
+                                based in Dubai, UAE, specializing in the import, export, and distribution of
+                                high-quality food products and
+                                FMCG goods. With over 10 years of experience in international trade, we have built a
+                                strong reputation for
+                                reliability, transparency, and service excellence across global markets.
+                            </p>
+                            <p>
+                                We serve a wide range of customers, including HORECA (Hotels, Restaurants, and Catering)
+                                clients,
+                                retailers, wholesalers, and distributors. Our portfolio covers canned goods, dry foods,
+                                beverages,
+                                frozen products, and essential commodities, all sourced and supplied in compliance with
+                                international
+                                quality and safety standards..
+                            </p>
+                            <p>
+                                <span class="text-brand-600 font-bold">Al'ufuq International L.L.C</span> exports to
+                                multiple
+                                countries across Africa, the Middle East, and Asia,supported by our deep understanding
+                                of
+                                global sourcing, efficient supply chain
+                                logistics,
+                                and evolving market needs. In addition to international exports, we are actively engaged
+                                in
+                                local wholesale trading within the UAE, ensuring timely supply and competitive pricing
+                                for our domestic partners.
+                            </p>
+                            <p>Driven by a customer-focused approach and long-term partnerships, we are committed to
+                                delivering consistent quality,
+                                dependable service, and value-driven solutions. At Al’ufuq International L.L.C, we
+                                connect markets with trusted
+                                products and build sustainable trade relationships worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-serif font-bold text-gray-900 mb-4">Our Core Values</h2>
+                    <div class="w-20 h-1 bg-brand-500 mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Value 1 -->
+                    <div
+                        class="p-8 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow border border-gray-100 group">
+                        <div
+                            class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center text-brand-600 mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Integrity</h3>
+                        <p class="text-gray-600">We believe in transparent business practices and honest sourcing. What
+                            you see on the label is exactly what you get.</p>
+                    </div>
+
+                    <!-- Value 2 -->
+                    <div
+                        class="p-8 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow border border-gray-100 group">
+                        <div
+                            class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center text-brand-600 mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Excellence</h3>
+                        <p class="text-gray-600">We never settle for "good enough". Whether it's product quality or
+                            customer service, we strive for the exceptional.</p>
+                    </div>
+
+                    <!-- Value 3 -->
+                    <div
+                        class="p-8 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow border border-gray-100 group">
+                        <div
+                            class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center text-brand-600 mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Partnership</h3>
+                        <p class="text-gray-600">We view our clients not just as customers, but as long-term partners in
+                            the culinary arts community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10 border-t border-gray-800" id="contact">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="logo.png" alt="Logo" class="h-12 w-auto brightness-0 invert opacity-80">
+                        <a href="#" class="text-2xl font-serif font-bold text-white tracking-tight">ALUFUQ <span
+                                class="text-brand-500">INTL</span></a>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Your premier partner for quality food distribution. Bringing the world's finest ingredients to
+                        your kitchen.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand-400">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-brand-500 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-brand-500 transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-brand-500 transition-colors">Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand-400">Products</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="products.html" class="hover:text-brand-500 transition-colors">Oils & Fats</a></li>
+                        <li><a href="products.html" class="hover:text-brand-500 transition-colors">Sauces</a></li>
+                        <li><a href="products.html" class="hover:text-brand-500 transition-colors">Dry Goods</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand-400">Contact Us</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-500 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Shams Business Center,<br>Dubai, UAE</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>sales@alufuqintl.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                &copy; 2026 ALUFUQ INTL. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
