@@ -105,10 +105,13 @@
                     data-filter="oils">Oils & Fats</button>
                 <button
                     class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:border-brand-500 hover:text-brand-500"
-                    data-filter="pantry">Dry Pantry</button>
+                    data-filter="pantry">Rice & Sugar</button>
                 <button
                     class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:border-brand-500 hover:text-brand-500"
                     data-filter="canned">Canned Goods</button>
+                <button
+                    class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:border-brand-500 hover:text-brand-500"
+                    data-filter="pasta">Macaroni & Pasta</button>
                 <button
                     class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:border-brand-500 hover:text-brand-500"
                     data-filter="fmcg">Non-Food / FMCG</button>
@@ -157,16 +160,15 @@
                         </p>
 
                         <div class="border-t border-gray-100 pt-6">
-                            <div class="flex items-center gap-2 text-gray-700 mb-2">
-                                <span class="font-semibold text-brand-500">Available Size:</span>
-                                <span id="modal-size" class="font-medium bg-gray-100 px-2 py-1 rounded">Size</span>
+                            <div class="mb-6">
+                                <span class="block font-semibold text-brand-500 mb-3">Available Packs:</span>
+                                <div id="modal-sizes" class="flex flex-wrap gap-2">
+                                    <!-- Sizes injected here -->
+                                </div>
                             </div>
-                            <p class="text-sm text-gray-400 mt-6 italic">Contact us for bulk pricing and delivery
-                                options.</p>
-                            <a href="#contact" onclick="closeModal()"
-                                class="mt-6 inline-block w-full text-center py-4 bg-brand-500 text-white rounded-xl font-bold hover:bg-brand-600 transition-colors shadow-lg shadow-brand-500/20">
-                                Request Quote
-                            </a>
+                            <p class="text-xs text-gray-400 italic mt-2">* Product packaging may vary based on
+                                availability.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -242,37 +244,43 @@
             // Condiments
             { name: "Premium Mayonnaise", category: "condiments", desc: "Creamy, rich texture perfect for bases and dips.", size: "1 Gallon", image: "Mayo.jpg" },
             { name: "Tomato Ketchup", category: "condiments", desc: "Classic tangy tomato flavor made from fresh vine-ripened tomatoes.", size: "295Gms / 1Gallon", image: "Tomato.jpg" },
-            { name: "Yellow Mustard", category: "condiments", desc: "Smooth and zesty american style mustard.", size: "1 Gallon", image: "Mus.jpg" },
+            { name: "Yellow Mustard", category: "condiments", desc: "Smooth and zesty american style mustard.", size: "200Gm / 350Gm / 1 Gallon ", image: "Mus.jpg" },
             { name: "Hot Sauce (Sriracha)", category: "condiments", desc: "Spicy chili kick for wings and marinades.", size: "1 Gallon", image: "Hot.jpg" },
-            { name: "BBQ Sauce", category: "condiments", desc: "Smoky and sweet hickory flavor.", size: "1 Gallon", image: "BBQ.jpg" },
-            { name: "Soy Sauce", category: "condiments", desc: "Dark premium slightly salty sauce.", size: "18L", image: "Kiko.jpg" },
+            { name: "BBQ Sauce", category: "condiments", desc: "Smoky and sweet hickory flavor.", size: "340Gm / 1 Gallon", image: "BBQ.jpg" },
+            { name: "Soy Sauce", category: "condiments", desc: "Dark premium slightly salty sauce.", size: "500Ml / 1Ltr", image: "Kiko.jpg" },
+            { name: "Pancake Syrup", category: "condiments", desc: "Sweet maple-flavored syrup for pancakes and waffles.", size: "710Ml", image: "Pancake Syrup.jpg" },
+            { name: "Chocolate Syrup", category: "condiments", desc: "Rich chocolate syrup for desserts and beverages.", size: "623Ml", image: "Chocolate Syrup.jpg" },
+            { name: "Strawberry Syrup", category: "condiments", desc: "Sweet strawberry syrup for toppings and milkshakes.", size: "623Ml", image: "strawberry syrup.jpg" },
 
             // Oils
             { name: "Sunflower Oil", category: "oils", desc: "Pure refined sunflower oil for frying and cooking.", size: "1.5L / 5L / 18L", image: "Sun.jpg" },
-            { name: "Corn Oil", category: "oils", desc: "High smoke point, perfect for deep frying.", size: "18L Tin", image: "https://images.unsplash.com/photo-1620803126848-18e32c0245a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" }, // Closest generic
+            { name: "Corn Oil", category: "oils", desc: "High smoke point, perfect for deep frying.", size: "2 X 1.5Ltr Pet Bottle", image: "Corn Oil.jpg" }, // Closest generic
             { name: "Extra Virgin Olive Oil", category: "oils", desc: "Cold pressed premium olive oil.", size: "1 x 12Ltr Pet Bottle", image: "oil.jpg" },
-            { name: "Vegetable Ghee", category: "oils", desc: "Rich buttery flavor for traditional dishes.", size: "15kg Tin", image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" }, // Butter/Ghee
+            { name: "Pure Ghee", category: "oils", desc: "Rich buttery flavor for traditional dishes.", size: "1Kg Tin", image: "Ghee.jpg" }, // Butter/Ghee
 
-            // Pantry
-            { name: "Basmati Rice", category: "pantry", desc: "Long grain premium aromatic rice.", size: "5Kg 10kg / 20kg", image: "Basmati.jpg" },
+            // Rice & Sugar
+            { name: "Basmati Rice", category: "pantry", desc: "Long grain premium aromatic rice.", size: "5kg / 10kg / 20kg", image: "Basmati.jpg" },
             { name: "Jasmine Rice", category: "pantry", desc: "Fragrant sticky rice for asian cuisine.", size: "20kg", image: "https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { name: "Pasta Penne", category: "pantry", desc: "Durum wheat semolina pasta.", size: "5kg", image: "https://images.unsplash.com/photo-1551462147-37885acc36f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { name: "White Sugar", category: "pantry", desc: "Fine granulated sugar.", size: "50kg Sack", image: "Sugar.jpg" },
-            { name: "Bulk Spices", category: "pantry", desc: "Blask pepper, Cumin, Chili Powder etc.", size: "1kg / 5kg", image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { name: "Red Lentils", category: "pantry", desc: "Premium split red lentils.", size: "15kg", image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+            { name: "Caster Sugar", category: "pantry", desc: "Fine granulated sugar.", size: "50kg Sack", image: "Sugar.jpg" },
 
+            // Macaroni & Pasta
+            { name: "Farfalle", category: "pasta", desc: "Classic bow-tie pasta made from premium durum wheat, perfect for sauces and salads.", size: "500Gm", image: "Farfalle.jpg" },
+            { name: "Lasagna", category: "pasta", desc: "Wide, flat pasta sheets made from premium durum wheat, perfect for layered baked dishes.", size: "500Gm", image: "Lasagna.jpg" },
+            { name: "Shell", category: "pasta", desc: "Spiral-shaped pasta made from premium durum wheat, ideal for holding sauces.", size: "500Gm", image: "Shells.jpg" },
+            { name: "Panne Rigate", category: "pasta", desc: "Long thin pasta for traditional Italian dishes.", size: "500Gm", image: "Panne Rigate.jpg" },
+            { name: "Piccoli", category: "pasta", desc: "Small pasta made from premium durum wheat, perfect for soups, salads, and light sauces.", size: "500Gm", image: "Piccoli.jpg" },
             // Canned
-            { name: "Sweet Corn", category: "canned", desc: "Whole kernel corn in brine.", size: "3kg Can", image: "https://images.unsplash.com/photo-1551326844-4df70f78d096?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { name: "Mushrooms", category: "canned", desc: "Sliced button mushrooms.", size: "3kg Can", image: "https://images.unsplash.com/photo-1593456386300-d3ea49959f63?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { name: "Tomato Paste", category: "canned", desc: "Double concentrated tomato paste.", size: "800g / 3kg", image: "Tomato Paste.jpg" },
-            { name: "Chickpeas (Canned)", category: "canned", desc: "Ready to eat chickpeas.", size: "2.5kg", image: "https://images.unsplash.com/photo-1505575967455-40e256f73376?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+            { name: "Sweet Corn", category: "canned", desc: "Whole kernel corn in brine.", size: "340Gm Can/ 2.5Kg", image: "sweet corn.jpg" },
+            { name: "Mushrooms", category: "canned", desc: "Sliced button mushrooms.", size: "400Gm /3Kg Tin", image: "mush.jpg" },
+            { name: "Tomato Paste", category: "canned", desc: "Double concentrated tomato paste.", size: "400Gm / 800Gm / 3Kg", image: "Tomato Paste.jpg" },
+            { name: "Chickpeas (Canned)", category: "canned", desc: "Ready to eat chickpeas.", size: "400Gm / 2.5Kg", image: "https://images.unsplash.com/photo-1505575967455-40e256f73376?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
 
             // FMCG
-            { name: "Aluminum Foil", category: "fmcg", desc: "Heavy duty foil for commercial kitchens.", size: "45cm x 150m", image: "https://images.unsplash.com/photo-1626154332822-26154bce4578?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" }, // Kitchen prep
-            { name: "Cling Film", category: "fmcg", desc: "High stretch food grade film.", size: "45cm", image: "https://images.unsplash.com/photo-1517400192348-18c7f9996d9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { name: "Vinyl Gloves", category: "fmcg", desc: "Food safe disposable gloves.", size: "Box of 100", image: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { name: "Maxi Roll Tissues", category: "fmcg", desc: "Highly absorbent cleaning tissues.", size: "1 Pack", image: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { name: "Garbage Bags", category: "fmcg", desc: "Heavy duty black bags.", size: "55 Gallon", image: "https://images.unsplash.com/photo-1595335967916-b8b8d009b0b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+            { name: "Aluminum Foil", category: "fmcg", desc: "Heavy duty foil for commercial kitchens.", size: "45cm x 150m / 30cm x 150cm", image: "Alu.jpg" }, // Kitchen prep
+            { name: "Cling Film", category: "fmcg", desc: "High stretch food grade film.", size: "445cm x 150m / 30cm x 150cm", image: "Cling.jpg" },
+            { name: "Vinyl Gloves", category: "fmcg", desc: "Food safe disposable gloves.", size: "Box of 100Pcs", image: "Glove.jpg" },
+            { name: "Maxi Roll Tissues", category: "fmcg", desc: "Highly absorbent cleaning tissues.", size: "750Gm / 900Gm/ 1Kg Pack", image: "Max.jpg" },
+            { name: "Garbage Bags", category: "fmcg", desc: "Heavy duty black bags.", size: "55 Gallon, 75Gallon, 100Gallon", image: "gar.jpg" },
         ];
 
         const grid = document.getElementById('product-grid');
@@ -314,7 +322,7 @@
         const modalTitle = document.getElementById('modal-title');
         const modalDesc = document.getElementById('modal-desc');
         const modalCat = document.getElementById('modal-category');
-        const modalSize = document.getElementById('modal-size');
+        const modalSizes = document.getElementById('modal-sizes');
 
         function openModal(productName) {
             const product = products.find(p => p.name === productName);
@@ -324,7 +332,20 @@
             modalTitle.textContent = product.name;
             modalDesc.textContent = product.desc;
             modalCat.textContent = product.category;
-            modalSize.textContent = product.size;
+
+            // Format sizes logic
+            modalSizes.innerHTML = '';
+            // Split string by slash or comma to get individual sizes
+            const sizeList = product.size.split(/\/|,/).map(s => s.trim());
+
+            sizeList.forEach(s => {
+                if (s) {
+                    const badge = document.createElement('span');
+                    badge.className = 'px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-gray-700 font-bold text-sm shadow-sm hover:border-brand-300 hover:text-brand-600 transition-colors cursor-default';
+                    badge.textContent = s;
+                    modalSizes.appendChild(badge);
+                }
+            });
 
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
